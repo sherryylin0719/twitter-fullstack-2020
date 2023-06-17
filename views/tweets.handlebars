@@ -34,7 +34,7 @@
       {{> messages}}
       {{!-- card 1 --}}
       {{#each tweetList}}
-      <div class="card card-tweet-lg">
+      <div class="card card-tweet-lg tweetCard">
         <a href="/tweets/{{this.id}}/replies" class="tweet-href"></a>
         <div class="avatar">
           <a href="/users/{{this.UserId}}/tweets" class="primary-anchor">
@@ -90,3 +90,4 @@
 {{!------------- tweet modal -------------}}
 {{> tweet-modal}}
 
+<script src="/javascripts/reply.js"></script>

@@ -11,8 +11,8 @@ module.exports = {
       await queryInterface.bulkInsert('Tweets', Array.from({ length: 50 }).map((d, i) => ({
         User_id: users[parseInt( i / 10 )].id,
         description: faker.lorem.text().substring(0,100),
-        created_at: new Date(),
-        updated_at: new Date()
+        created_at: new Date().toISOString().substring(0, 16),
+        updated_at: new Date().toISOString().substring(0, 16)
       })), {});
     console.log('Tweets seeded successfully.');
     } 

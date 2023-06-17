@@ -21,8 +21,8 @@ module.exports = {
       avatar:'https://www.giantbomb.com/a/uploads/scale_small/0/4024/570741-mrburns.gif',
       introduction: faker.lorem.text().substring(0,50),
       role:'user',
-      created_at: new Date(),
-      updated_at: new Date()
+      created_at: new Date().toISOString().substring(0, 16),
+      updated_at: new Date().toISOString().substring(0, 16)
     }, {
       name: 'Homer',
       email: 'Homer@example.com',
@@ -31,8 +31,8 @@ module.exports = {
       avatar:'https://www.azcentral.com/gcdn/-mm-/fd5c5b5393c72a785789f0cd5bd20acedd2d2804/c=0-350-2659-1850/local/-/media/Phoenix/BillGoodykoontz/2014/04/24//1398388295000-Homer-Simpson.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp',
       introduction: faker.lorem.text().substring(0,50),
       role:'user',
-      created_at: new Date(),
-      updated_at: new Date()
+      created_at: new Date().toISOString().substring(0, 16),
+      updated_at: new Date().toISOString().substring(0, 16)
     }, {
       name: 'Marge',
       email: 'Marge@example.com',
@@ -41,8 +41,8 @@ module.exports = {
       avatar: 'https://images.immediate.co.uk/production/volatile/sites/3/2016/03/Simpsons_g2013_R1_marge-04bf0d1.jpg?quality=90&webp=true&crop=3px,170px,1884px,1255px&resize=1000,667',
       introduction: faker.lorem.text().substring(0,50),
       role:'user',
-      created_at: new Date(),
-      updated_at: new Date()
+      created_at: new Date().toISOString().substring(0, 16),
+      updated_at: new Date().toISOString().substring(0, 16)
     }, {
       name: 'Bart',
       email: 'Bart@example.com',
@@ -51,8 +51,8 @@ module.exports = {
       avatar:'https://www.gyfted.me/_next/image?url=%2Fimg%2Fcharacters%2Fbart-simpson.png&w=256&q=75',
       introduction: faker.lorem.text().substring(0,50),
       role:'user',
-      created_at: new Date(),
-      updated_at: new Date()
+      created_at: new Date().toISOString().substring(0, 16),
+      updated_at: new Date().toISOString().substring(0, 16)
     }, {
       name: 'Lisa',
       email: 'Lisa@example.com',
@@ -61,8 +61,8 @@ module.exports = {
       avatar:'https://easydrawingguides.com/wp-content/uploads/2022/09/Easy-Lisa-Simpson.png',
       introduction: faker.lorem.text().substring(0,50),
       role:'user',
-      created_at: new Date(),
-      updated_at: new Date()
+      created_at: new Date().toISOString().substring(0, 16),
+      updated_at: new Date().toISOString().substring(0, 16)
     },
   ], {});
     console.log('Users seeded successfully.');

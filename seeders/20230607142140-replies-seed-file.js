@@ -18,8 +18,8 @@ module.exports = {
         User_id: users[i % 5].id,
         Tweet_id: tweets[parseInt(i / 3)].id,
         comment: faker.lorem.text().substring(0, 80),
-        created_at: new Date(),
-        updated_at: new Date()
+        created_at: new Date().toISOString().substring(0, 16),
+        updated_at: new Date().toISOString().substring(0, 16)
       })), {});
       console.log('Replies seeded successfully.');
     }
