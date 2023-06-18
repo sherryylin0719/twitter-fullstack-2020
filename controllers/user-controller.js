@@ -83,7 +83,7 @@ const userController = {
             { model: Reply, attributes: ['id'] },
             { model: Like, attributes: ['id'] }
           ],
-          order: [['createdAt', 'DESC']],
+          order: [['createdAt', 'ASC']],
         }),
         Like.findAll({
           where: { UserId: loginUserId },
@@ -132,7 +132,7 @@ const userController = {
             { model: User, attributes: ['name', 'account', 'avatar'] },
             { model: Tweet, attributes: ['id'], include: [User] }
           ],
-          order: [['createdAt', 'DESC']],
+          order: [['createdAt', 'ASC']],
         })
       ])
       const topUsers = await userServices.getTopUsers(loginUserId)
